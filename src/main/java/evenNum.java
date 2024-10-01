@@ -1,5 +1,4 @@
 //Exercise 1
-package org.example;
 
 public class evenNum {
     public static void main(String[] args) {
