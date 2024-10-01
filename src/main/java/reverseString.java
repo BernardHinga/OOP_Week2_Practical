@@ -1,5 +1,4 @@
 //Exercise 2
-package org.example;
 
 import java.util.Scanner;
 
