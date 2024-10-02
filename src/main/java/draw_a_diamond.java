@@ -21,6 +21,7 @@ public class draw_a_diamond {
 //            The gap that forms the diamond shape
             for (int y = i; y < widthMedian; y++) {
                 System.out.print(" ");
+                System.out.print(" ");
             }
 
 //            Print out the top-right side of the canvas.
@@ -41,6 +42,7 @@ public class draw_a_diamond {
             }
 //            The gap that forms the diamond shape
             for (int z = i; z < widthMedian; z++) {
+                System.out.print(" ");
                 System.out.print(" ");
             }
 
