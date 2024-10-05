@@ -4,15 +4,32 @@ import java.util.Scanner;
 
 public class reverseSentence {
     public static void main(String[] args) {
-//        Create an original sentence from user input.
-        System.out.println("Type a sentence: ");
-        Scanner sc = new Scanner(System.in);
-        String originalSentence = sc.nextLine();
+//        Create a variable and array to store the words from the sentence
+        String originalSentence;
+        String[] words;
+        
+//        Get the original sentence from user input.
+//        Make sure user input has at least two words.
+        do {
+            System.out.println("Type a sentence: ");
+            Scanner sc = new Scanner(System.in);
+            originalSentence = sc.nextLine();
+            
+            words = originalSentence.split(" ");
+        } while(words.length < 2);
 
-//        Create an array to store the words from the sentence
-        String[] words = originalSentence.split(" ");
 
-//        Create a variable to store the reverse of the sentence.
+//        Infer the variable that stores the reverse of the sentence from the method.
+        String reversedSentence = reverseString(words);
+
+//    Output the reversed sentence.
+        System.out.println();
+        System.out.println("Original: " + originalSentence);
+        System.out.println("Reversed: " + reversedSentence);
+    }
+
+//    Create a method with the words array as its parameter to reverse the array, store and return it.
+    private static String reverseString(String[] words) {
         String reversedSentence = "";
 
 //        Create a variable that will store the number of words in the sentence.
@@ -26,6 +43,6 @@ public class reverseSentence {
 
 //        Trim possible extra space at the end.
         reversedSentence = reversedSentence.substring(0, reversedSentence.length() - 1);
-        System.out.println(reversedSentence);
+        return reversedSentence;
     }
 }
