@@ -1,3 +1,5 @@
+//Exercise 4
+
 import java.util.Scanner;
 
 public class draw_a_diamond {
